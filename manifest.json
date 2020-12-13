@@ -1,6 +1,6 @@
 {
   "name": "SRBK VolChanger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Build an Volume-Change Extension!",
   "default_locale": "en",
   "icons": {
@@ -15,14 +15,15 @@
       "16": "icons/icon-16.png",
       "19": "icons/icon-19.png"
     },
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "Volume Booster"
   },
   "permissions": [
     "declarativeContent",
     "storage"
   ],
   "background": {
-    "page": "popup.html",
+    "scripts": [ "./script/background.js" ],
     "persistent": false
   },
   "manifest_version": 2
