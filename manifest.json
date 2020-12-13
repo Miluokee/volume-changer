@@ -1,0 +1,28 @@
+{
+    "name": "SRBK VolChanger",                                  /* название разширения (обязательное поле) */
+    "version": "1.0.2",                                         /* версия разширения (обязательное поле) */
+    "description": "Build an Volume-Change Extension!",         /* описание разширения */
+    "permissions": ["declarativeContent", "storage"],           /* запросы на полномочия */
+    "background": {                                             /* фоновые сценарии */
+      "page": ["background.js"], 
+      "persistent": false                                       /* выгрузка страницы из памяти во время бездействия, значение фолс */
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon-16.png",
+        "19": "images/icon-19.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+      }
+    },
+    "icons": {
+      "16": "images/icon-16.png",
+      "19": "images/icon-19.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "manifest_version": 2                                     /* версия манифеста (обязательное поле, значение 2) */
+}
